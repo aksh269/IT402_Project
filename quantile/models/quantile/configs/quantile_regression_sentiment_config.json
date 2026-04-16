@@ -1,0 +1,13 @@
+{
+  "data_dir": "Final_data",
+  "output_dir": "models/quantile/outputs",
+  "lags": 50,
+  "quantile": 0.5,
+  "use_sentiment": true,
+  "market_features": ["Close", "Volume", "Open", "High", "Low", "Adj close"],
+  "sentiment_features": ["Scaled_sentiment", "Sentiment_gpt", "News_flag"],
+  "model_params": {
+    "alpha": 0.001,
+    "solver": "highs"
+  }
+}

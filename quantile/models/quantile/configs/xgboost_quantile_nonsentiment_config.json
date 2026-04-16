@@ -1,0 +1,19 @@
+{
+  "data_dir": "Final_data",
+  "output_dir": "models/quantile/outputs",
+  "lags": 50,
+  "quantile": 0.5,
+  "use_sentiment": false,
+  "market_features": ["Close", "Volume", "Open", "High", "Low", "Adj close"],
+  "sentiment_features": ["Scaled_sentiment", "Sentiment_gpt", "News_flag"],
+  "model_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "tree_method": "hist",
+    "random_state": 42,
+    "n_jobs": -1
+  }
+}
